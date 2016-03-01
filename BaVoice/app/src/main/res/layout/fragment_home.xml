@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+<Button
+    android:textSize="40sp"
+    android:background="@drawable/weatherbackground"
+    android:id="@+id/bt_fragment_map"
+    android:textColor="@color/white"
+    android:text="按下进入查询"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+</LinearLayout>

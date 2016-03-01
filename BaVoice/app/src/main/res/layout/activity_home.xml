@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <!--tab上方的显示区域-->
+    <FrameLayout
+        android:id="@+id/mHomeContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mHomeRadioGroup">
+
+        </FrameLayout>
+
+    <!--底下的四个tab-->
+    <RadioGroup
+        android:id="@+id/mHomeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/tab_bg"  >
+
+        <RadioButton
+            android:id="@+id/mHomeHomeRb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="天气"
+            android:textColor="@drawable/selector_tab_text_color"
+            android:background="@color/tab_bg"
+            android:drawableTop="@drawable/selector_tab_home"
+           />
+
+        <RadioButton
+            android:id="@+id/mHomeFindRb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="翻译"
+
+            android:textColor="@drawable/selector_tab_text_color"
+            android:background="@color/tab_bg"
+            android:drawableTop="@drawable/selector_tab_find"
+            />
+
+        <RadioButton
+            android:id="@+id/mHomeSearchRb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="语音"
+            android:textColor="@drawable/selector_tab_text_color"
+            android:background="@color/tab_bg"
+            android:drawableTop="@drawable/selector_tab_profile"
+           />
+
+        <RadioButton
+            android:id="@+id/mHomeProfileRb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="查询"
+            android:textColor="@drawable/selector_tab_text_color"
+            android:background="@color/tab_bg"
+            android:drawableTop="@drawable/selector_tab_search"
+
+            android:checked="true"
+           />
+    </RadioGroup>
+</RelativeLayout>

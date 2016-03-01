@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/weatherbackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/et_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+<!-- android:onClick="trans"-->
+    <Button
+        android:background="@drawable/pt_selector"
+
+        android:id="@+id/btn_trans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="英译中" />
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/et_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+    <TextView
+        android:id="@+id/tv_entoch_translate_trans"
+        android:textSize="22sp"
+        android:ems="10"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_zntoen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="20" >
+
+
+        <requestFocus />
+    </EditText>
+    <!--   android:onClick="entoch"-->
+    <Button
+        android:background="@drawable/pt_selector"
+
+        android:id="@+id/bt_entoch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中译英" />
+    <TextView
+        android:id="@+id/tv_chtoen_translate_trans"
+        android:textSize="22sp"
+        android:ems="10"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

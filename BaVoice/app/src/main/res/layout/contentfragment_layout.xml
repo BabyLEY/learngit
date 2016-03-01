@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <mybaiduuse.mybaiduuse.cn.bavoice.view.NoScrollViewPager
+        android:id="@+id/vp_contentfragment_pages"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"></mybaiduuse.mybaiduuse.cn.bavoice.view.NoScrollViewPager>
+
+
+    <RadioGroup
+
+        android:id="@+id/rg_contentfragment_bottomradiobuttons"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/bottom_tab_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rb_contentfragment_newscenter"
+            style="@style/rb_style"
+            android:drawableTop="@drawable/rb_news_selector"
+            android:text="翻译" />
+
+        <RadioButton
+            android:id="@+id/rb_contentfragment_smartservice"
+            style="@style/rb_style"
+            android:drawableTop="@drawable/rb_smartservice_selector"
+            android:text="语言" />
+
+        <RadioButton
+            android:id="@+id/rb_contentfragment_govaffairs"
+            style="@style/rb_style"
+            android:drawableTop="@drawable/rb_govaffairs_selector"
+            android:text="地图" />
+
+        <RadioButton
+            android:id="@+id/rb_contentfragment_settingcenter"
+            style="@style/rb_style"
+            android:drawableTop="@drawable/rb_setting_selector"
+            android:text="天气" />
+    </RadioGroup>
+</LinearLayout>
